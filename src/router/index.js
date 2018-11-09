@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import CitySearch from '@/components/CitySearch'
 import CurrentWeather from '@/components/CurrentWeather'
 import Forecast from '@/components/Forecast'
+import ErrorsList from '@/components/ErrorsList'
 
 Vue.use(Router)
 
@@ -22,7 +23,11 @@ export default new Router({
       path: '/:cityId/forecast',
       name: 'Forecast',
       component: Forecast
+    },
+    {
+      path: '/:cityId/errorsList',
+      name: 'ErrorsList',
+      component: ErrorsList
     }
   ]
 })
-// TODO: Add routes for Current Weather and Forecast views.
